@@ -1,13 +1,13 @@
-# Startpack Gulp 4.0
+# Apriori
 
 Pug, less
 
 Клонируем в текущую папку (точка в конце через пробел):
 ```
-$ git clone git@github.com:kaddem/startpack.git .
+$ git clone git@github.com:kaddem/apriori.git .
 ```
 
-Избавляемся от привязки к удаленному репозиторию:
+Избавляемся от привязки к удаленному репозиторию (если надо):
 ```
 git remote rm origin
 ```
