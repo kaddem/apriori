@@ -14,14 +14,17 @@
   
 
   @media screen and (min-width: @width_tablet){
-
+    
   }
 
   @media screen and (min-width: @width_desktop_min){
+    position: static;
     .col(20px, left);
     .col12-6;
+    float: none;
     display: inline-block;
     vertical-align: middle;
+    box-shadow: none;
   }
 
   &__inner {
@@ -58,6 +61,8 @@
 
     @media screen and (min-width: @width_desktop_min){
       margin-left: 30px;
+      margin-right: 0;
+      padding: 0;
     }
 
     &:first-child {
@@ -84,6 +89,7 @@
 
       @media screen and (min-width: @width_desktop_min){
         font-size: 18px;
+        padding: 0; 
       }
 
       &:hover {

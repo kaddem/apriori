@@ -121,14 +121,25 @@
       &:before {
         content: '';
         position: absolute;
-        left: 20px;
+        left: 10px;
         top: 5px;
         display: block;
-        width: 55px;
-        height: 55px;
-        background-size: 55px;
+        width: 35px;
+        height: 35px;
+        background-size: 35px;
         background-position: center;
         background-repeat: no-repeat;
+
+        @media screen and (min-width: @width_tablet){
+          
+        }
+
+        @media screen and (min-width: @width_desktop_min){
+          left: 20px;
+          width: 55px;
+          height: 55px;
+          background-size: 55px;
+        }
       }
 
       &--loupe {
