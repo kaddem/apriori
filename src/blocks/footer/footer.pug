@@ -1,5 +1,11 @@
 mixin footer()
-	+b.SECTION.footer&attributes(attributes)
-		block
-		+e.inner
-			+e.P.title footer
+  +b.FOOTER.footer&attributes(attributes)
+    +e.inner
+      +e.row
+        +e.col
+          +b.logo
+            +e.A.link(href="#")
+              +e.SPAN.slogan Ведение бухгалтерского учета в Санкт-Петербурге
+              +e.IMG.img(src="../img/logo_apriori.png" alt="Априори логотип")
+        +e.col
+          p(class="copyright") © 2017. All rights reserved

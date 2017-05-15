@@ -1,7 +1,46 @@
+body {
+  font-family: @lato;
+}
+
 input, button, textarea, select {
   outline: none;
 }
 
 button {
   cursor: pointer;
+}
+
+h2 {
+  position: relative;
+  font-family: @lato;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  color: @text;
+
+  @media screen and (min-width: @width_tablet){
+    font-size: 36px;
+  }
+
+  @media screen and (min-width: @width_desktop_min){
+    font-size: 40px;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 120px;
+    height: 4px;
+    background-color: @blue;
+
+    @media screen and (min-width: @width_tablet){
+      margin-top: 15px;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      margin-top: 20px;
+    }
+  }
 }

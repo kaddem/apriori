@@ -1,5 +1,13 @@
 mixin promo()
-	+b.SECTION.promo&attributes(attributes)
-		block
-		+e.inner
-			+e.P.title promo
+  +b.SECTION.promo(style="background-image: url(../img/promo-bg.jpg);")
+    +e.inner
+      +e.row
+        +e.text
+          H1 Сомневаетесь все ли в порядке с Вашей бухгалтерией?
+          UL
+            LI Боитесь налоговых банковских проверок?
+            LI Не уверены в правильности составления и сдачи отчетности?
+            LI Не хватает времени?
+            P сделаем всю работу за вас!
+        +e.form
+          block

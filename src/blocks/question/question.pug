@@ -1,5 +1,23 @@
 mixin question()
-	+b.SECTION.question&attributes(attributes)
-		block
-		+e.inner
-			+e.P.title question
+  +b.SECTION.question&attributes(attributes)
+    +e.inner
+      h2 Вам нужно решить один из этих вопросов?
+      +e.UL.row
+        li(class="icon-gear")
+          span(class="text") Ведение бухгалтерского учета
+        li(class="icon-clock")
+          span(class="text") Восстановление бухгалтерского учета
+        li(class="icon-calc")
+          span(class="text") Постановка бухгалтерского учета
+        li(class="icon-people")
+          span(class="text") Ведение кадрового делопроизводства
+        li(class="icon-docs")
+          span(class="text") Восстановление кадровой документации
+        li(class="icon-purse")
+          span(class="text") Расчет заработной платы
+        li(class="icon-search")
+          span(class="text") Экспресс-аудит
+        li(class="icon-basket")
+          span(class="text") Ликвидация организаций
+        li(class="icon-list")
+          span(class="text") Регистрация бизнеса

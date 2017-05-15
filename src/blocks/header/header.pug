@@ -3,10 +3,12 @@ mixin header()
     +e.inner
       +e.row
         +b.logo
-          +e.A.logo-link
+          +e.A.link(href="#")
             +e.SPAN.slogan Ведение бухгалтерского учета в Санкт-Петербурге
-            +e.IMG.logo-img(src="../img/logo_apriori.png" alt="Априори логотип")
+            +e.IMG.img(src="../img/logo_apriori.png" alt="Априори логотип")
         block
         +b.phone
           +e.A.link(href="tel:89117777777") 8 911 777 77 77
           +e.SPAN.work-clock работаем с 9 до 18
+        +b.DIV.burger
+          span

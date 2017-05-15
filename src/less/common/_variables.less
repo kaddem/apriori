@@ -1,11 +1,15 @@
 // Переменные модульной сетки
 
+
+// Расстоянии между колонками модульной сетки
+@indent-col:                          30px;
+
 // Ширины экранов
 @width_desktop_wide:                  1920px;
 @width_desktop_middle:                1440px;
-@width_desktop_min:                   1280px;
+@width_desktop_min:                   1200px;
 @width_tablet:                        768px;
-@width_phone:                         375px;
+@width_phone:                         320px;
 
 @width_desktop_middle_max:            ( @width_desktop_wide - 1 );
 @width_desktop_min_max:               ( @width_desktop_middle - 1 );
@@ -15,9 +19,9 @@
 // Ширины контентных областей
 @container_desktop_wide:              ( @width_desktop_wide - 80 );
 @container_desktop_middle:            ( @width_desktop_middle - 110 );
-@container_desktop_min:               ( @width_desktop_min - 80 );
-@container_tablet:                    ( @width_tablet - 80 );
-@container_phone:                     ( @width_phone - 40 );
+@container_desktop_min:               @width_desktop_min;
+@container_tablet:                    @width_tablet;
+@container_phone:                     @width_phone;
 
 // Расстоянии между колонками модульной сетки
 @indent-col:                          30px;
@@ -43,7 +47,12 @@
 
 // Цветовая палитра
 @white:                               #ffffff;
-
+@text:                                #363636;
+@blue:                                #0d4b91;
+@grey-dark:                           #747373;
+@grey:                                #cccccc;
+@yellow:                              #ffd618;
 
 // Шрифты
 @pt-sans:                              'PT Sans', sans-serif;
+@lato:                                  Lato, Arial, sans-serif;

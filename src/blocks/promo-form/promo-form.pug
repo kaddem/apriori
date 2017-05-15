@@ -1,0 +1,9 @@
+mixin promo-form()
+  +b.FORM.promo-form(action="#")
+    p(class="form-text") Первый месяц обслуживания 
+      span 0 руб. 
+    p(class="form-text") при заключении договора на 3 месяца
+    +e.INPUT(class="input-name" placeholder="Введите Ваше имя")
+    +e.INPUT(class="input-tel" placeholder="Введите Ваш тел.")
+    +b.BUTTON(class="form-btn") Получить месяц обслуживания бесплатно
+    p(class="form-action") наш бухгалтер свяжется с вами в течение 5 минут!

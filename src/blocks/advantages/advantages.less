@@ -1,3 +1,109 @@
 .advantages{
-	display: block;
+  background-color: #f5f5f5;
+  padding-top: 10px;
+  padding-bottom: 40px;
+
+  &__inner {
+    .container(20px);
+  }
+
+  & ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  & li {
+    position: relative;
+    min-height: 70px;
+    margin: 15px 0;
+    padding:0 15px 0 60px;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 3px 7px 15px 0px rgba(0, 0, 0, .13);
+
+    @media screen and (min-width: @width_tablet){
+      min-height: 100px;
+      padding-left: 100px;
+      margin: 20px 0;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      display: block;
+      height: 50px;
+      width: 60px;
+      background-size: 35px;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @media screen and (min-width: @width_tablet){
+        background-size: 50px;
+        width: 100px;
+      }
+    }
+
+    &:after {
+      content: '';
+      display: inline-block;
+      min-height: 70px;
+      vertical-align: middle;
+
+      @media screen and (min-width: @width_tablet){
+        min-height: 100px;
+      }
+    }
+
+
+  }
+
+  & .adv-shield {
+    &:before {
+      background-image: url(../img/adv-shield.svg);
+    }
+  }
+
+  & .adv-letter {
+    &:before {
+      background-image: url(../img/adv-letter.svg);
+    }
+  }
+
+  & .adv-phone {
+    &:before {
+      background-image: url(../img/adv-phone.svg);
+    }
+  }
+
+  & .adv-courier {
+    &:before {
+      background-image: url(../img/adv-courier.svg);
+    }
+  }
+
+  & p {
+    display: inline-block;
+    width: 98%;
+    margin: 15px 0 15px 0;
+    font-family: @lato;
+    font-weight: 300;
+    font-size: 14px;
+    color: @text;
+    vertical-align: middle;
+
+    @media screen and (min-width: @width_tablet){
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
 }

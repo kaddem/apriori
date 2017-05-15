@@ -1,5 +1,36 @@
 mixin price()
-	+b.SECTION.price&attributes(attributes)
-		block
-		+e.inner
-			+e.P.title price
+  +b.SECTION.price&attributes(attributes)
+    +e.inner
+      h2 Наши тарифы
+      p Точная стоимость зависит от документооборота и формы собствености
+      +e.row
+        +e.col
+          h3 новичок
+          p(class="price-summ") от 1 500 р. в месяц
+          p(class="price-description") Для тех, кто только начинает свое дело:
+          ul
+            li подготовка и сдача отчетности
+            li консультация по всем взникшим у Вас вопросам
+          button(class="btn btn-price") Отправить
+        +e.col.--active
+          h3 оптимальный
+          p(class="price-summ") от 9 000 р. в месяц
+          p(class="price-description") До 30 операцией, до 3 сотрудников:
+          ul
+            li подготовка и сдача отчетности
+            li консультация по всем взникшим у Вас вопросам
+            li Ведение бухгалтерского и налогового учета
+          button(class="btn btn-price") Отправить
+        +e.col
+          h3 премиум
+          p(class="price-summ") от 25 000 р. в месяц
+          p(class="price-description") До 60 операцией, до 6 сотрудников
+          ul
+            li подготовка и сдача отчетности
+            li консультация по всем взникшим у Вас вопросам
+            li Личный ассистент
+            li Доступ в 1С
+            li Подготовка первичных документов на отгрузку
+            li Ведение банк клиента
+            li Кадровый минимум
+          button(class="btn btn-price") Отправить

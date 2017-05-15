@@ -1,0 +1,6 @@
+mixin contatcs-form()
+  +b.FORM.contatcs-form(action="#")
+    p(class="form-text") закажите обратный звонок прямо сейчас
+    +e.INPUT(class="input-name" placeholder="Введите Ваше имя")
+    +e.INPUT(class="input-tel" placeholder="Введите Ваш тел.")
+    +b.BUTTON(class="form-btn") Заказать звонок

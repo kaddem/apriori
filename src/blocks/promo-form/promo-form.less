@@ -1,0 +1,80 @@
+.promo-form{
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 3px;
+
+  @media screen and (min-width: @width_tablet){
+    padding: 30px 15px 20px 15px;
+    background-color: @white;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, .16);
+  }
+
+  @media screen and (min-width: @width_desktop_min){
+    
+  }
+
+  & .form-text {
+    margin: 0;
+    font-family: @lato;
+    font-size: 14px;
+    line-height: 2;
+    font-weight: normal;
+    color: @text;
+    text-transform: uppercase;
+    text-align: center;
+
+    & span {
+      font-weight: bold;
+    }
+  }
+
+  & input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    font-family: @lato;
+    font-size: 16px;
+    border: none;
+    background-color: @grey;
+    color: @white;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+
+  .form-btn {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 19px 10px;
+    font-family: @lato;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: bold;
+    color: @text;
+    background-color: @yellow;
+    border: none;
+    border-radius: 3px;
+
+    @media screen and (min-width: @width_tablet){
+      padding: 19px 50px;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      
+    }
+  }
+
+  & .form-action {
+    margin: 0;
+    font-family: @lato;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: normal;
+    color: @text;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+
+}

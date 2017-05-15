@@ -1,5 +1,38 @@
 mixin experts()
-	+b.SECTION.experts&attributes(attributes)
-		block
-		+e.inner
-			+e.P.title experts
+  +b.SECTION.experts&attributes(attributes)
+    +e.inner
+      h2 С Вами работает штат опытных бухгалтеров
+      +e.row
+        +e.col
+          +e.box
+            +e.photo
+              img(src="img/expert.jpg")
+            +e.description
+              strong
+                span Орлова Вероника Дмитриевна
+              p Образование: мировая экономика. 
+              p Окончила курсы... 
+              p Имеются сертификаты. 
+              p Опыт работы более 7 лет
+        +e.col
+          +e.box
+            +e.photo
+              img(src="img/expert.jpg")
+            +e.description
+              strong
+                span Орловская Александрина Дмитриевнанана
+              p Образование: мировая экономика. 
+              p Окончила курсы мега супер пупер курсы... 
+              p Имеются сертификаты. 
+              p Опыт работы более 7 лет
+        +e.col
+          +e.box
+            +e.photo
+              img(src="img/expert.jpg")
+            +e.description
+              strong
+                span Орлова Вероника Дмитриевна
+              p Образование: мировая экономика. 
+              p Окончила курсы... 
+              p Имеются сертификаты. 
+              p Опыт работы более 7 лет

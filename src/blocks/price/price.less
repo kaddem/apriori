@@ -1,3 +1,183 @@
 .price{
-	display: block;
+  display: block;
+  background-color: #f5f5f5;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media screen and (min-width: @width_tablet){
+    padding-top: 170px;
+  }
+
+  @media screen and (min-width: @width_desktop_min){
+    
+    padding-bottom: 80px;
+  }
+
+  &__inner {
+    .container(20px);
+
+    & > p {
+      
+      font-family: @lato;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 25px;
+      color: @grey-dark;
+      text-align: center;
+
+      @media screen and (min-width: @width_tablet){
+
+      }
+
+      @media screen and (min-width: @width_desktop_min){
+        width: 36%;
+        margin: auto;
+        margin-bottom: 80px;
+      }
+    }
+  }
+
+  &__row {
+    .row(20px);
+    display: table-row;
+  }
+
+  &__col {
+    position: relative;
+    .col(20px, left);
+    .col12-12;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #c4c4c4;
+    text-align: center;
+    font-size: 18px;
+    color: @text;
+    line-height: 20px;
+    background-color: #fff;
+
+    @media screen and (min-width: @width_tablet){
+      .col(20px, left);
+      .col12-12;
+      padding-bottom: 20px;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      .col12-4;
+      float: none;
+      display: table-cell;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 30px;
+      padding-bottom: 80px;
+      margin-bottom: 0;
+      background-color: #f5f5f5;
+    }
+
+    &--active {
+
+      @media screen and (min-width: @width_desktop_min){
+        transform: scale(1.1);
+        background-color: #fff;
+        border: 5px solid @blue;
+        z-index: 10;
+      }
+
+    }
+  }
+
+  & h3 {
+    font-family: @lato;
+    font-weight: normal;
+    font-size: 25px;
+    text-transform: uppercase;
+
+    &:after {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      margin-top: 25px;
+      width: 170px;
+      height: 1px;
+      background-color: @text;
+      opacity: .35;
+    }
+  }
+
+  & .price-summ {
+    font-size: 30px;
+    line-height: 35px;
+    color: @blue;
+  }
+
+  & ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 0;
+    // text-align: left;
+  }
+
+  & li {
+    // position: relative;
+    // display: inline-block;
+    vertical-align: top;
+    margin: 20px 0;
+    padding-left: 10px;
+    font-size: 18px;
+    color: @text;
+    line-height: 20px;
+    box-sizing: border-box;
+
+    @media screen and (min-width: @width_tablet){
+      // display: inline-block;
+      // width: 50%;
+      // text-align: left;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      width: auto;
+      vertical-align: top;
+      margin: 20px 0;
+      padding-left: 10px;
+    }
+
+    &:before {
+      content: '';
+      display: inline-block;
+      vertical-align: top;
+      width: 5px;
+      height: 5px;
+      margin-top: 8px;
+      margin-right: 5px;
+      border-radius: 50%;
+      background-color: @blue;
+    }
+  }
+
+  & .btn-price {
+    margin: auto;
+    width: 220px;
+    padding: 20px;
+    font-size: 15px;
+    font-family: @lato;
+    font-weight: bold;
+    background-color: @yellow;
+    border: none;
+    border-radius: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @media screen and (min-width: @width_tablet){
+
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+    }
+  }
 }

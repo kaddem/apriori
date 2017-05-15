@@ -1,3 +1,144 @@
 .contacts{
-	display: block;
+  background-color: @blue;
+  padding-top: 30px;
+  position: relative;
+  padding-bottom: 310px;
+
+  @media screen and (min-width: @width_tablet){
+    padding-top: 0;
+    padding-bottom: 0px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  @media screen and (min-width: @width_desktop_min){
+    position: relative;
+    overflow: hidden;
+  }
+  
+  &__inner {
+    .container(20px);
+  }
+
+  &__row {
+    .row(20px);
+  }
+
+  &__info {
+    .col(20px, left);
+    
+
+    @media screen and (min-width: @width_tablet){
+      .col12-6;
+      min-height: 520px;
+      padding-top: 30px;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      .col(20px, left);
+      .col12-5;
+      min-height: 720px;
+      padding-top: 100px;
+      padding-right: 40px;
+    }
+  }
+
+  & .office-phone, & span {
+    position: relative;
+    margin: 10px 0;
+    padding-left: 30px;
+    display: block;
+    font-family: @lato;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: @white;
+    letter-spacing: .1px;
+
+    @media screen and (min-width: @width_tablet){
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      margin: 20px 0;
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 0;
+      display: block;
+      width: 15px;
+      height: 15px;
+      background-size: 15px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: @blue;
+    }
+  }
+
+  & .office-phone {
+    text-decoration: none;
+
+    &:before {
+      background-image: url(../img/icon-old-phone-white.svg);
+    }
+  }
+  
+  & .work-clock {
+
+    &:before {
+      background-image: url(../img/icon-clock-white.svg);
+    }
+  }
+
+  & .office-adress {
+
+    &:before {
+      background-image: url(../img/icon-pin.svg);
+    }
+  }
+
+  &__map {
+    .col(0px, left);
+    .col12-12;
+    height: 300px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+
+    @media screen and (min-width: @width_tablet){
+      .col(20px, left);
+      .col12-6;
+      position: absolute;
+      width: 60%;
+      min-height: 520px;
+      left: 50%;
+      bottom: auto;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      .col12-7;
+      position: absolute;
+      width: 60%;
+      left: 44%;
+    }
+
+    & iframe {
+      min-height: 300px;
+
+      @media screen and (min-width: @width_tablet){
+        min-height: 520px;
+      }
+
+      @media screen and (min-width: @width_desktop_min){
+        min-height: 720px;
+      }
+    }
+  }
 }

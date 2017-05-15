@@ -1,3 +1,145 @@
 .experts{
-	display: block;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media screen and (min-width: @width_tablet){
+      
+  }
+
+  @media screen and (min-width: @width_desktop_min){
+    padding-bottom: 80px;
+  }
+
+
+  &__inner {
+    .container(20px);
+  }
+
+  &__row {
+    .row(20px);
+    margin-top: 20px;
+
+    @media screen and (min-width: @width_tablet){
+      
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      .row(140px);
+      margin-top: 70px;
+    }
+  }
+
+  &__col {
+    .col(20px, left);
+    .col12-12;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: @width_tablet){
+      .col12-4;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      .col(140px, left);
+      .col12-4;
+    }
+  }
+
+  &__box {
+    position: relative;
+
+    @media screen and (min-width: @width_tablet){
+      
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      height: 410px;
+      overflow: hidden;
+    }
+
+    &:hover {
+      & .experts__description {
+
+        @media screen and (min-width: @width_desktop_min){
+          transform: translateY(-100%);
+        }
+      }
+    }
+  }
+
+  &__photo {
+    width: 100%;
+
+    @media screen and (min-width: @width_tablet){
+      height: 310px;
+      overflow: hidden;
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      height: auto;
+    }
+  }
+
+  & img {
+    width: 100%;
+    display: block;
+  }
+
+  &__description {
+    padding: 15px 0;
+    font-family: @lato;
+    color: @text;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all .2s ease;
+
+    @media screen and (min-width: @width_tablet){
+      
+    }
+
+    @media screen and (min-width: @width_desktop_min){
+      padding: 15px;
+      position: absolute;
+      width: 100%;
+      top: 100%;
+      left: 0;
+      color: @white;
+      background-color: @blue;
+      transform: translateY(-80px);
+    }
+  }
+
+  & strong {
+    display: block;
+    font-size: 0;
+    margin-bottom: 15px;
+    font-weight: normal;
+
+    &:before {
+
+      @media screen and (min-width: @width_tablet){
+      
+      }
+
+      @media screen and (min-width: @width_desktop_min){
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        min-height: 50px;
+      }
+    }
+  }
+
+  & span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  & p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 20px;
+  }
 }
