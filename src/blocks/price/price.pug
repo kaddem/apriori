@@ -1,5 +1,5 @@
 mixin price()
-  +b.SECTION.price&attributes(attributes)
+  +b.SECTION.price(id="price")
     +e.inner
       h2 Наши тарифы
       p Точная стоимость зависит от документооборота и формы собствености
@@ -12,7 +12,7 @@ mixin price()
             li подготовка и сдача отчетности
             li консультация по всем взникшим у Вас вопросам
           button(class="btn btn-price") Отправить
-        +e.col.--active
+        +e.col
           h3 оптимальный
           p(class="price-summ") от 9 000 р. в месяц
           p(class="price-description") До 30 операцией, до 3 сотрудников:

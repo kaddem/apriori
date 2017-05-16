@@ -1,5 +1,5 @@
 mixin sentence()
-  +b.SECTION.sentence&attributes(attributes)
+  +b.SECTION.sentence(id="sentence")
     +e.inner
       +e.row
         +e.title-block(style="background-image: url(../img/sentence-bg.jpg);")
@@ -7,11 +7,17 @@ mixin sentence()
         +e.info
           ul
             +b.LI.item--loupe
+              i
+                img(src="/img/icon-loupe.svg", alt="")
               strong Боитесь налоговых банковских проверок?
               span Гарантируемположительное прохождение любой проверки со стороны налоговой и банков. За всю историю компанию все проверки прошли успешно.
             +b.LI.item--check
+              i
+                img(src="/img/icon-check.svg", alt="")
               strong Не уверены в правильности составления и сдачи отчетности?
               span Гарантируемположительное прохождение любой проверки со стороны налоговой и банков. За всю историю компанию все проверки прошли успешно.
             +b.LI.item--calendar
+              i
+                img(src="/img/icon-calendar.svg", alt="")
               strong Не хватает времени?
               span Освободим Вам уйму времени, что Вы могли заниматься продажами и развитием бизнеса. Хватит тратить время на составление и сбор документов!

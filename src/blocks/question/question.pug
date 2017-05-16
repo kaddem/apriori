@@ -1,23 +1,41 @@
 mixin question()
-  +b.SECTION.question&attributes(attributes)
+  +b.SECTION.question(id="question")
     +e.inner
       h2 Вам нужно решить один из этих вопросов?
       +e.UL.row
-        li(class="icon-gear")
-          span(class="text") Ведение бухгалтерского учета
-        li(class="icon-clock")
-          span(class="text") Восстановление бухгалтерского учета
-        li(class="icon-calc")
-          span(class="text") Постановка бухгалтерского учета
-        li(class="icon-people")
-          span(class="text") Ведение кадрового делопроизводства
-        li(class="icon-docs")
-          span(class="text") Восстановление кадровой документации
-        li(class="icon-purse")
-          span(class="text") Расчет заработной платы
-        li(class="icon-search")
-          span(class="text") Экспресс-аудит
-        li(class="icon-basket")
-          span(class="text") Ликвидация организаций
-        li(class="icon-list")
-          span(class="text") Регистрация бизнеса
+        li
+          div
+            img(src="img/icon-gear.svg")
+          span Ведение бухгалтерского учета
+        li
+          div
+            img(src="img/icon-clock.svg")
+          span Восстановление бухгалтерского учета
+        li
+          div
+            img(src="img/icon-calc.svg")
+          span Постановка бухгалтерского учета
+        li
+          div
+            img(src="img/icon-people.svg")
+          span Ведение кадрового делопроизводства
+        li
+          div
+            img(src="img/icon-docs.svg")
+          span Восстановление кадровой документации
+        li
+          div
+            img(src="img/icon-purse.svg")
+          span Расчет заработной платы
+        li
+          div
+            img(src="img/icon-search.svg")
+          span Экспресс-аудит
+        li
+          div
+            img(src="img/icon-basket.svg")
+          span Ликвидация организаций
+        li
+          div
+            img(src="img/icon-list.svg")
+          span Регистрация бизнеса

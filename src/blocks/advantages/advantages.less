@@ -28,8 +28,7 @@
       margin: 20px 0;
     }
 
-    &:before {
-      content: '';
+    & i {
       position: absolute;
       left: 0;
       top: 0;
@@ -38,14 +37,20 @@
       display: block;
       height: 50px;
       width: 60px;
-      background-size: 35px;
-      background-repeat: no-repeat;
-      background-position: center;
+      padding: 7px;
+      box-sizing: border-box;
+      text-align: center;
 
       @media screen and (min-width: @width_tablet){
-        background-size: 50px;
         width: 100px;
+        padding: 0;
       }
+
+      & img {
+        height: 100%;
+        display: inline-block;
+      }
+
     }
 
     &:after {
@@ -60,30 +65,6 @@
     }
 
 
-  }
-
-  & .adv-shield {
-    &:before {
-      background-image: url(../img/adv-shield.svg);
-    }
-  }
-
-  & .adv-letter {
-    &:before {
-      background-image: url(../img/adv-letter.svg);
-    }
-  }
-
-  & .adv-phone {
-    &:before {
-      background-image: url(../img/adv-phone.svg);
-    }
-  }
-
-  & .adv-courier {
-    &:before {
-      background-image: url(../img/adv-courier.svg);
-    }
   }
 
   & p {

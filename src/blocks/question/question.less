@@ -21,144 +21,98 @@
     @media screen and (min-width: @width_tablet){
       text-align: center;
     }
-  }
 
-  & [class*="icon"] {
-    .col(20px, left);
-    .col12-12;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-
-    @media screen and (min-width: @width_tablet){
-      position: relative;
-      .col12-6;
-      min-height: 80px;
-      float: none;
-      display: inline-block;
-      vertical-align: top;
-      text-align: left;
-    }
-
-    @media screen and (min-width: @width_desktop_min){
-      .col12-4;
-      margin-bottom: 25px;
-      margin-top: 25px;
-    }
-
-    &:before {
-      content: '';
-      display: inline-block;
-      vertical-align: middle;
-      width: 35px;
-      height: 35px;
-      margin-right: 10px;
-      background-size: 20px 20px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-color: #f5f5f5;
+    & li {
+      .col(20px, left);
+      .col12-12;
+      margin-top: 10px;
+      margin-bottom: 10px;
 
       @media screen and (min-width: @width_tablet){
-        position: absolute;
-        left: 10px;
-        top: 0;
-        width: 80px;
-        height: 80px;
-        margin-right: 20px;
-        background-size: 36px 36px;
+        position: relative;
+        .col12-6;
+        min-height: 80px;
+        float: none;
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
       }
 
       @media screen and (min-width: @width_desktop_min){
-        
+        .col12-4;
+        margin-bottom: 25px;
+        margin-top: 25px;
       }
-    }
 
-    &:after {
-
-      @media screen and (min-width: @width_tablet){
+      & div {
         content: '';
         display: inline-block;
-        min-height: 80px;
         vertical-align: middle;
-      }
-
-    }
-
-    & .text {
-      width: 240px;
-      display: inline-block;
-      vertical-align: middle;
-      font-family: @lato;
-      font-weight: 300;
-      font-size: 18px;
-
-      @media screen and (min-width: @width_tablet){
-        width: 100%;
-        padding-left: 100px;
+        text-align: center;
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+        padding: 7px;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #f5f5f5;
         box-sizing: border-box;
-        font-size: 20px;
-        line-height: 25px;
+
+        @media screen and (min-width: @width_tablet){
+          position: absolute;
+          left: 10px;
+          top: 0;
+          width: 80px;
+          height: 80px;
+          padding: 14px;
+          margin-right: 20px;
+          background-size: 36px 36px;
+        }
+
+        @media screen and (min-width: @width_desktop_min){
+          
+        }
+
       }
 
-      @media screen and (min-width: @width_desktop_min){
+      & img {
+        height: 100%;
+        display: inline-block;
+      }
+
+      & span {
+        width: 240px;
+        display: inline-block;
+        vertical-align: middle;
+        font-family: @lato;
+        font-weight: 300;
+        font-size: 18px;
+
+        @media screen and (min-width: @width_tablet){
+          width: 100%;
+          padding-left: 100px;
+          box-sizing: border-box;
+          font-size: 20px;
+          line-height: 25px;
+        }
+
+        @media screen and (min-width: @width_desktop_min){
+
+        }
 
       }
 
-    }
+      &:after {
 
-  }
+        @media screen and (min-width: @width_tablet){
+          content: '';
+          display: inline-block;
+          min-height: 80px;
+          vertical-align: middle;
+        }
 
-  & .icon-gear {
-    &:before {
-      background-image: url(../img/icon-gear.svg);
-    }
-  }
-
-  & .icon-clock {
-    &:before {
-      background-image: url(../img/icon-clock.svg);
-    }
-  }
-
-  & .icon-calc {
-    &:before {
-      background-image: url(../img/icon-calc.svg);
-    }
-  }
-
-  & .icon-people {
-    &:before {
-      background-image: url(../img/icon-people.svg);
-    }
-  }
-
-  & .icon-docs {
-    &:before {
-      background-image: url(../img/icon-docs.svg);
-    }
-  }
-
-  & .icon-purse {
-    &:before {
-      background-image: url(../img/icon-purse.svg);
-    }
-  }
-
-  & .icon-search {
-    &:before {
-      background-image: url(../img/icon-search.svg);
-    }
-  }
-
-  & .icon-basket {
-    &:before {
-      background-image: url(../img/icon-basket.svg);
-    }
-  }
-
-  & .icon-list {
-    &:before {
-      background-image: url(../img/icon-list.svg);
+      }
     }
   }
 

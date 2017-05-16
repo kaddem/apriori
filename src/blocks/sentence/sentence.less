@@ -116,19 +116,14 @@
       @media screen and (min-width: @width_desktop_min){
         padding-left: 100px;
       }
-      
 
-      &:before {
-        content: '';
+      & i {
         position: absolute;
         left: 10px;
         top: 5px;
         display: block;
         width: 35px;
         height: 35px;
-        background-size: 35px;
-        background-position: center;
-        background-repeat: no-repeat;
 
         @media screen and (min-width: @width_tablet){
           
@@ -138,29 +133,57 @@
           left: 20px;
           width: 55px;
           height: 55px;
-          background-size: 55px;
+        }
+
+        & img {
+          height: 100%;
         }
       }
+      
 
-      &--loupe {
+      // &:before {
+      //   content: '';
+      //   position: absolute;
+      //   left: 10px;
+      //   top: 5px;
+      //   display: block;
+      //   width: 35px;
+      //   height: 35px;
+      //   background-size: 35px;
+      //   background-position: center;
+      //   background-repeat: no-repeat;
 
-        &:before {
-          background-image: url(../img/icon-loupe.svg);
-        }
-      }
-      &--check {
+      //   @media screen and (min-width: @width_tablet){
+          
+      //   }
 
-        &:before {
-          background-image: url(../img/icon-check.svg);
-        }
-      }
+      //   @media screen and (min-width: @width_desktop_min){
+      //     left: 20px;
+      //     width: 55px;
+      //     height: 55px;
+      //     background-size: 55px;
+      //   }
+      // }
 
-      &--calendar {
+      // &--loupe {
 
-        &:before {
-          background-image: url(../img/icon-calendar.svg);
-        }
-      }
+      //   &:before {
+      //     background-image: url(../img/icon-loupe.svg);
+      //   }
+      // }
+      // &--check {
+
+      //   &:before {
+      //     background-image: url(../img/icon-check.svg);
+      //   }
+      // }
+
+      // &--calendar {
+
+      //   &:before {
+      //     background-image: url(../img/icon-calendar.svg);
+      //   }
+      // }
     }
 
 

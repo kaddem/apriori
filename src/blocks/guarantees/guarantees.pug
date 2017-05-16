@@ -1,15 +1,21 @@
 mixin guarantees()
-  +b.SECTION.guarantees(style="background-image: url(../img/guarantees-bg.jpg);")
+  +b.SECTION.guarantees(id="guarantees" style="background-image: url(../img/guarantees-bg.jpg);")
     +e.inner
       h2 Гарантии
 
       +e.row
         +e.col(class="col")
-          div(class="item-check")
+          div(class="item")
+            div(class="icon")
+              img(src="img/item-check.svg", alt="")
             p В штате нашей компани работают только сертифицированные бухгалтера
         +e.col(class="col")
-          div(class="item-clock")
+          div(class="item")
+            div(class="icon")
+              img(src="img/item-clock.svg", alt="")
             p За 5 лет работы все отчеты сданы всрок!
         +e.col(class="col")
-          div(class="item-money")
+          div(class="item")
+            div(class="icon")
+              img(src="img/item-money.svg", alt="")
             p Если Вам не поравится качество обслуживания в нашей компании, вернем Вам деньги
