@@ -15,15 +15,20 @@
   }
 
   &__inner {
+    position: fixed;
+    left: 0;
+    right: 0;
     width: 300px;
-    margin: 0 auto;
-    position: relative;
+    margin: auto;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 10000;
   }
 
   & .contatcs-form {
     background-color: @blue;
+    position: relative;
+    margin: 0;
   }
 
   & .close-modal {

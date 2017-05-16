@@ -68,4 +68,8 @@ $(document).ready(function(){
     $('.modal').slideUp();
   });
 
+  $('.modal__wrapper').on('click', function(){
+    $('.modal').slideUp();
+  });
+
 });
