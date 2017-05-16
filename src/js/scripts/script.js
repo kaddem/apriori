@@ -47,6 +47,7 @@ $(document).ready(function(){
   $(window).resize(function(){
       if( $(window).width() > 1199 ) {
           $('.nav').show();
+          $('.nav').css("display","inline-block");
       } else {
           $('.nav').slideUp(400);
           $('.burger').removeClass('burger--close');
