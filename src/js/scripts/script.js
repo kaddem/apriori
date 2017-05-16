@@ -60,4 +60,12 @@ $(document).ready(function(){
     }
   });
 
+  $('.btn-price').on('click', function(){
+    $('.modal').slideDown();
+  });
+
+  $('.close-modal').on('click', function(){
+    $('.modal').slideUp();
+  });
+
 });

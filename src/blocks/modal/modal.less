@@ -1,0 +1,45 @@
+.modal{
+	display: block;
+  display: none;
+
+  &__wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 5000;
+    background-color: rgba(0, 0, 0, .5);
+    overflow: hidden;
+  }
+
+  &__inner {
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  & .contatcs-form {
+    background-color: @blue;
+  }
+
+  & .close-modal {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+
+    &:before {
+      content: 'X';
+    }
+  }
+}
